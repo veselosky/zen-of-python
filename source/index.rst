@@ -23,3 +23,20 @@ Zen of Python
     If the implementation is hard to explain, it's a bad idea. <hard-to-explain-is-a-bad-idea.rst>
     If the implementation is easy to explain, it may be a good idea. <easy-to-explain-maybe-good-idea.rst>
     Namespaces are one honking great idea -- let's do more of those! <namespaces.rst> 
+
+Credits
+------------------------------------
+
+The Zen of Python is officially documented in `PEP 20`_ by Tim Peters.
+
+This site was inspired by `David Gouldin's tweet`_ at the lazyweb, though it
+deviates somewhat from his original specification. The site is built with
+Sphinx_ and uses Ryan Roemer's `Sphinx Bootstrap Theme`_. It was compiled by
+`Vince Veselosky`_ and is hosted at Github_.
+
+.. _David Gouldin's tweet: https://twitter.com/dgouldin/status/411278318671900672
+.. _Sphinx: http://sphinx.pocoo.org/
+.. _Sphinx Bootstrap Theme: http://ryan-roemer.github.io/sphinx-bootstrap-theme/README.html
+.. _PEP 20: http://legacy.python.org/dev/peps/pep-0020/
+.. _Vince Veselosky: http://vince.veselosky.me/
+
