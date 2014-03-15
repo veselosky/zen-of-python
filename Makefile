@@ -21,6 +21,9 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
 .PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest gettext
 
+# If make runs with no target, use html
+.DEFAULT_GOAL = html
+
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  html       to make standalone HTML files"
@@ -51,6 +54,7 @@ clean:
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	echo "zen-of-python.mindvessel.net" >> $(BUILDDIR)/html/CNAME
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
