@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>If the implementation is easy to explain, it may be a good idea &mdash; The Zen of Python</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="The Zen of Python" href="index.html" />
+    <link rel="next" title="Namespaces are one honking great idea – let’s do more of those!" href="namespaces.html" />
+    <link rel="prev" title="If the implementation is hard to explain, it’s a bad idea" href="hard-to-explain-is-a-bad-idea.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Zen of Python</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">The Zen of Python is... <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="beautiful-is-better-than-ugly.html">Beautiful is better than ugly.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="explicit-is-better-than-implicit.html">Explicit is better than implicit.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple-is-better-than-complex.html">Simple is better than complex.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="complex-is-better-than-complicated.html">Complex is better than complicated.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flat-is-better-than-nested.html">Flat is better than nested.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sparse-is-better-than-dense.html">Sparse is better than dense.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readability-counts.html">Readability counts.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="special-cases-are-not-special.html">Special cases aren&#8217;t special enough to break the rules.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="practicality-beats-purity.html">Although practicality beats purity.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="errors-should-never-pass-silently.html">Errors should never pass silently.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="errors-should-never-pass-silently.html">Unless explicitly silenced.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="refuse-the-tempation-to-guess.html">In the face of ambiguity, refuse the temptation to guess.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="one-obvious-way.html">There should be one&#8211; and preferably only one &#8211;obvious way to do it.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="one-obvious-way.html">Although that way may not be obvious at first unless you&#8217;re Dutch.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="now-is-better-than-never.html">Now is better than never.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="never-is-better-than-right-now.html">Although never is often better than *right* now.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hard-to-explain-is-a-bad-idea.html">If the implementation is hard to explain, it&#8217;s a bad idea.</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">If the implementation is easy to explain, it may be a good idea.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="namespaces.html">Namespaces are one honking great idea &#8211; let&#8217;s do more of those!</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="hard-to-explain-is-a-bad-idea.html" title="Previous Chapter: If the implementation is hard to explain, it’s a bad idea"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; If the implement...</span>
+    </a>
+  </li>
+  <li>
+    <a href="namespaces.html" title="Next Chapter: Namespaces are one honking great idea – let’s do more of those!"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Namespaces are o... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="if-the-implementation-is-easy-to-explain-it-may-be-a-good-idea">
+<h1>If the implementation is easy to explain, it may be a good idea<a class="headerlink" href="#if-the-implementation-is-easy-to-explain-it-may-be-a-good-idea" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">Beautiful is better than ugly.</div>
+<div class="line">Explicit is better than implicit.</div>
+<div class="line">Simple is better than complex.</div>
+<div class="line">Complex is better than complicated.</div>
+<div class="line">Flat is better than nested.</div>
+<div class="line">Sparse is better than dense.</div>
+<div class="line">Readability counts.</div>
+<div class="line">Special cases aren&#8217;t special enough to break the rules.</div>
+<div class="line">Although practicality beats purity.</div>
+<div class="line">Errors should never pass silently.</div>
+<div class="line">Unless explicitly silenced.</div>
+<div class="line">In the face of ambiguity, refuse the temptation to guess.</div>
+<div class="line">There should be one&#8211; and preferably only one &#8211;obvious way to do it.</div>
+<div class="line">Although that way may not be obvious at first unless you&#8217;re Dutch.</div>
+<div class="line">Now is better than never.</div>
+<div class="line">Although never is often better than <em>right</em> now.</div>
+<div class="line">If the implementation is hard to explain, it&#8217;s a bad idea.</div>
+</div>
+<blockquote class="pull-quote">
+<div>If the implementation is easy to explain, it may be a good idea.</div></blockquote>
+<div class="line-block">
+<div class="line">Namespaces are one honking great idea &#8211; let&#8217;s do more of those!</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
