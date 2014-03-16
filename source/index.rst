@@ -34,9 +34,14 @@ deviates somewhat from his original specification. The site is built with
 Sphinx_ and uses Ryan Roemer's `Sphinx Bootstrap Theme`_. It was compiled by
 `Vince Veselosky`_ and is hosted at Github_.
 
+Also, for managing the annoyingly tricky gh-pages branch, I use Paul Davis's
+ghp-import_ tool, which makes life so much easier.
+
 .. _David Gouldin's tweet: https://twitter.com/dgouldin/status/411278318671900672
 .. _Sphinx: http://sphinx.pocoo.org/
 .. _Sphinx Bootstrap Theme: http://ryan-roemer.github.io/sphinx-bootstrap-theme/README.html
 .. _PEP 20: http://legacy.python.org/dev/peps/pep-0020/
 .. _Vince Veselosky: http://vince.veselosky.me/
+.. _Github: https://github.com/veselosky/zen-of-python
+.. _ghp-import: https://github.com/davisp/ghp-import
 
